@@ -1,0 +1,137 @@
+:root {
+    --verde-pistacho: #C1E899;
+    --verde-bosque: #55883B;
+    --verde-oscuro: #009B4D;
+    --amarillo: #FFCC00;
+    --marfil: #FAF5E9;
+    --marron: #9A6735;
+    --blanco: #fff;
+    --gris: #e6f0dc;
+  }
+  body {
+    background: linear-gradient(135deg, var(--marfil) 0%, var(--verde-pistacho) 100%);
+    color: var(--verde-oscuro);
+    font-family: 'Quicksand', Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  h2, h4, h5 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: var(--verde-bosque);
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 var(--amarillo), 2px 2px 0 var(--verde-pistacho);
+  }
+  .navbar {
+    background: linear-gradient(90deg, var(--verde-bosque) 0%, var(--verde-oscuro) 100%);
+    border-bottom: 4px solid var(--amarillo);
+  }
+  .navbar-brand, .navbar-nav .nav-link {
+    color: var(--blanco) !important;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .navbar-toggler {
+    border-color: var(--amarillo);
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,204,0,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .card {
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 24px rgba(85,136,59,0.10);
+    margin-bottom: 2rem;
+    background: linear-gradient(120deg, var(--blanco) 60%, var(--gris) 100%);
+    border: 2px solid var(--verde-bosque);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(85,136,59,0.15);
+  }
+  .card-title {
+    color: var(--verde-oscuro);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.3rem;
+  }
+  .table th, .table td {
+    vertical-align: middle;
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 1rem;
+  }
+  .table-primary {
+    background: linear-gradient(90deg, var(--amarillo) 0%, var(--verde-pistacho) 100%);
+    color: var(--verde-bosque);
+    font-weight: 600;
+  }
+  .btn-accent {
+    background: var(--verde-bosque);
+    color: var(--blanco);
+    border: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+  }
+  .btn-accent:hover {
+    background: var(--amarillo);
+    color: var(--verde-oscuro);
+  }
+  .social-icons a {
+    color: var(--verde-bosque);
+    font-size: 2rem;
+    margin-right: 1.2rem;
+    transition: color 0.2s, transform 0.2s;
+  }
+  .social-icons a:hover {
+    color: var(--amarillo);
+    transform: scale(1.2) rotate(-10deg);
+  }
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .form-label {
+    color: var(--verde-oscuro);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+  }
+  input, select, textarea {
+    border-radius: 1rem !important;
+    border: 2px solid var(--verde-bosque) !important;
+    font-family: 'Quicksand', Arial, sans-serif;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .gallery img {
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(85,136,59,0.15);
+    width: 180px;
+    height: 230px;
+    object-fit: contain;
+    background: var(--blanco);
+    transition: transform 0.2s;
+    border: 2px solid var(--verde-pistacho);
+  }
+  .gallery img:hover {
+    transform: scale(1.07) rotate(-2deg);
+    border: 2px solid var(--amarillo);
+  }
+  footer {
+    background: linear-gradient(90deg, var(--verde-bosque) 0%, var(--verde-oscuro) 100%);
+    color: var(--blanco);
+    letter-spacing: 1px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding: 1rem 0;
+  }
+  @media (max-width: 576px) {
+    h2 { font-size: 1.5rem; }
+    .card { font-size: 0.95rem; }
+    .navbar-brand { font-size: 1.2rem; }
+    .social-icons a { font-size: 1.5rem; }
+    .gallery img { width: 120px; height: 150px; }
+  }
